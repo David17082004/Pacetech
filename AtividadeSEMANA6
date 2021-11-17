@@ -1,0 +1,82 @@
+
+/** Feito por David ")
+ * 
+ * OBS
+ *Eu fiz o projeto "as cegas" pois meu IDE está com algum problema onde nao 
+ * consigo rodar o programa.
+ */
+package ExercícioSemana6;
+
+import java.util.Scanner;
+
+public class Main {
+
+    int i;
+    float tempFinal;
+    float tempC;
+    float tempF;
+    
+    float cotacao;
+    float qtdD;
+    float qtdR;
+    float qtdFinal
+    
+    public static void main(String[] args) {
+    
+        Scanner leitorScanner = new Scanner(System.in);
+        
+        while (i < 4){
+            System.out.println("1- Para converter a temperatura de F para C" +
+                    "/n"+ "2- Para converter a temperatura de C para F" +
+                    "/n"+ "3- Para Converter de Dólar para Reais" +
+                    "/n"+ "4- Para converter de Reais para Dólar" +
+                    "/n"+ "5- Para encerrar o programa");
+                    i = scan.nextInt();
+            
+            if (i == 1){
+                System.out.println("Digite a temperatura em F:");
+                tempF = scan.nextInt();
+                
+                tempC = (tempF - 32) /1,8;
+                System.out.println("A temperatura em Celsius é:" + 'tempC');
+                
+            }else {
+                if (i == 2){
+                System.out.println("Digite a temperatura em C:");
+                tempC = scan.nextInt();
+                
+                tempF = tempC * 1,8 + 32;
+                System.out.println("A temperatura em Fahrenheit é:" + 'tempF');
+                }else
+                    if(i == 3){
+                       System.out.println("Digite a cotação do Dólar:");
+                       cotacao = scan.nextInt();
+                       
+                       System.out.println("Digite a quantia em Reais:");
+                       qtdR = scan.nextInt();
+                       
+                       qtdD = qtdR * cotacao;
+                       qtdFinal = scan.nextInt();
+                       System.out.println("A quantia em Dólares é:" +
+                                    'qtdFinal');
+                    }else
+                        if (i == 4){
+                            System.out.println("Digite a cotação do Dólar:");
+                            cotacao = scan.nextInt();
+                       
+                            System.out.println("Digite a quantia em Dólares:");
+                            qtdD = scan.nextInt();
+                       
+                            qtdR = qtdD * cotacao;
+                            qtdFinal = scan.nextInt();
+                            System.out.println("A quantia em Reias é:" +
+                                    'qtdFinal');
+                        }else 
+                            System.out.println("Obrigado por usar o programa!");
+            
+            }
+        }
+        
+    }
+    
+}
